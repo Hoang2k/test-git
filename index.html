@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <section>
+      <div id="app">
+      <div class="list " :class="className"  v-for="product in products">
+          <div class="item">
+              <img v-bind:src="product.thumb" alt="">
+              <p>{{product.name}}</p>
+          </div>
+      </div>
+      </div>
+  </section>
+</body>
+
+<script src="https://unpkg.com/vue@3"></script>
+<script src="vue.js"></script>
+
+</html>
